@@ -39,7 +39,7 @@ export default class HelloWorld extends LightningElement {
         return this.calculator.mResult;
     }
     status="";
-    isVisible=true; //setting the value to button
+    isVisible=true; //setting the value to button to true
     handleClick(event){
         this.status=event.target.value;
         console.log(this.status);
