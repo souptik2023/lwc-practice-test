@@ -1,0 +1,30 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <!-- <div id="1">HelloWorld1</div> -->
+    <!-- <div id="2">{fullName}</div>
+    <div>{friends.firstFriend}</div>
+    <div>friends.home[0]</div>
+    <div>{getName}</div> -->
+    <!-- sldsValidatorIgnoreNextLine -->
+    
+
+    
+
+
+    <lightning-card  title="Practice LWC Basic">
+        <lightning-input label="Full Name" onkeyup={nameChangeHandler}></lightning-input>
+        <lightning-input label="title" onkeyup={titleChangeHandler}></lightning-input>
+        <div>My Name is {name.fName} and I am a {name.lName}</div>
+        <lightning-input label="Enter First Number" onchange={fNumberHandler}></lightning-input>
+        <lightning-input label="Enter Second Number" onchange={sNumberHandler}></lightning-input>
+        
+        <lightning-button label="Calculate" value="clicked" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+        <template lwc:if={buttonHandler}>
+            <div>Multiplication of Two Number: {multiplicationHandler}</div>
+        </template>
+        <template lwc:else>
+            <div> Please Click the Calculate button</div>
+        </template>
+        
+    </lightning-card>
+</template>
